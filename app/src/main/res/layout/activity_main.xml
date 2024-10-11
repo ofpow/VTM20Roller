@@ -9,36 +9,63 @@
 
     <NumberPicker
         android:id="@+id/regular"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <NumberPicker
         android:id="@+id/hunger"
-        android:layout_centerVertical="true"
         android:layout_marginLeft="300dp"
+        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <NumberPicker
+        android:id="@+id/difficulty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="90dp"
         android:layout_marginLeft="50dp"
         android:text="REGULAR"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="DIFFICULTY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
         android:layout_marginLeft="300dp"
         android:text="HUNGER"/>
     <Button
         android:id="@+id/roll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
         android:text="roll"
         android:textSize="24sp"
         android:textAllCaps="true"/>
+    <TextView
+        android:id="@+id/regular_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing Rolled Yet"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/hunger_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing Rolled Yet"
+        android:textColor="@color/design_default_color_error"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="250dp"/>
 
 </RelativeLayout>
